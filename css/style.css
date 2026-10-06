@@ -1,9 +1,45 @@
 /* ==========================================================
    PA1 - style.css
-   Author: <your name> (@<your-github-username>)
-
-   One stylesheet for every page. Organize it into sections
-   with comments, for example:
-     1. Page basics   2. Header and navigation   3. Content
-     4. Tables and lists   5. Footer
+   Author: Standley Saint Leger Rock (@standley2005-ship-it)
    ========================================================== */
+
+
+/* ---------- 1. Page basics ---------- */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: rgb(248, 249, 250);
+}
+
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+
+/* ---------- 2. Typography ---------- */
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
