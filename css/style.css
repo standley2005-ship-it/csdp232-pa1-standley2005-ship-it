@@ -25,15 +25,20 @@ section {
   margin-bottom: 2rem;
 }
 
-
-/* ---------- 2. Typography ---------- */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
 
 h1 {
+  margin: 0;
   font-size: 2.25rem;
 }
 
 h2 {
   font-size: 1.75rem;
+  color: #6b1220;
 }
 
 h3 {
@@ -42,4 +47,130 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+
+/* ---------- 2. Header and navigation ---------- */
+
+header {
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #6b1220;
+  border-bottom: 0.4rem solid #d4a017;
+}
+
+header p {
+  margin-bottom: 1.25rem;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  padding: 0.45rem 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #6b1220;
+}
+
+nav a:focus {
+  outline: 0.2rem solid #ffd966;
+  outline-offset: 0.2rem;
+}
+
+.current {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* ---------- 3. Main content and cards ---------- */
+
+#welcome {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border-left: 0.4rem solid #6b1220;
+}
+
+.intro-note {
+  color: #6b21a8;
+}
+
+#welcome .intro-note {
+  color: #7c2d12;
+}
+
+.spot-card {
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #d1d5db;
+  border-radius: 0.4rem;
+}
+
+.featured {
+  border-left: 0.4rem solid #d4a017;
+}
+
+.spot-card h3 {
+  margin-top: 0;
+  color: #6b1220;
+}
+
+.study-list,
+.resource-list {
+  padding-left: 2rem;
+}
+
+.resource-list a {
+  color: #7a1f2b;
+  font-weight: bold;
+}
+
+a[target="_blank"] {
+  text-decoration-style: dotted;
+}
+
+
+/* ---------- 4. Tables and lists ---------- */
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.data-table caption {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  border: 0.1rem solid #c9d6d2;
+  text-align: left;
+}
+
+.data-table th {
+  color: #ffffff;
+  background-color: #6b1220;
+}
+
+
+/* ---------- 5. Footer ---------- */
+
+footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #374151;
+}
+
+footer p {
+  margin: 0.25rem 0;
 }
