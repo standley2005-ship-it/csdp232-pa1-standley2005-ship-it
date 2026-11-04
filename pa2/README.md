@@ -24,4 +24,4 @@ TODO: 3–5 sentences in my own words.
 
 ## AI use statement
 
-TODO: Accurately describe the AI tools and assistance used for PA2.
+I used ChatGPT to help me understand JavaScript concepts like functions, arrays, loops, and debugging. I also used it to help write parts of the code, check my work, and troubleshoot errors.
