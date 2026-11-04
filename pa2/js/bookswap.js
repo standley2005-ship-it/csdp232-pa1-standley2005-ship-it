@@ -17,27 +17,34 @@
 // A1. Return the amount as a string with a dollar sign and exactly 2 decimals.
 //     formatPrice(45) -> "$45.00"     formatPrice(7.5) -> "$7.50"
 function formatPrice(amount) {
-  // TODO
+  return `$${amount.toFixed(2)}`;
 }
 
 // A2. Return the price after the discount for the condition, rounded to cents:
 //     "new" no discount, "good" 10% off, "fair" 25% off, any other condition no discount.
 //     discountedPrice(40, "good") -> 36     discountedPrice(45, "fair") -> 33.75
 function discountedPrice(price, condition) {
-  // TODO
+  let discount = 0;
+  if (condition === "good") {
+    discount = 0.10;
+  } else if (condition === "fair") {
+    discount = 0.25;
+  }
+  return Math.round(price * (1 - discount) * 100) / 100;
 }
 
 // A3. Return one line: title (course) - condition - price, with " [SOLD]" at the end
 //     when the listing is sold. Use a template literal and call formatPrice.
 //     "Calculus I (MATH 210) - good - $45.00"
 function describeListing(listing) {
-  // TODO
+  const soldLabel = listing.sold ? " [SOLD]" : "";
+  return `${listing.title} (${listing.course}) - ${listing.condition} - ${formatPrice(listing.price)}${soldLabel}`;
 }
 
 // A4. Return true when the listing is NOT sold AND its price is at most the budget;
 //     otherwise return false.
 function canBuy(listing, budget) {
-  // TODO
+  return listing.sold === false && listing.price <= budget;
 }
 
 
