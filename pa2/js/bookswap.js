@@ -53,37 +53,61 @@ function canBuy(listing, budget) {
 // B5. Return the number of listings that are not sold.
 //     Required technique: a for...of or for loop with a counter.
 function countAvailable(listings) {
-  // TODO
+  let count = 0;
+  for (const listing of listings) {
+    if (listing.sold === false) {
+      count++;
+    }
+  }
+  return count;
 }
 
 // B6. Return the listing whose id matches, or null if there is none.
 //     Required technique: find, then return null instead of undefined.
 function findListing(listings, id) {
-  // TODO
+  const match = listings.find((listing) => listing.id === id);
+  return match === undefined ? null : match;
 }
 
 // B7. Return an array of the listings for that course code ([] when none match).
 //     Required technique: filter.
 function listingsForCourse(listings, course) {
-  // TODO
+  return listings.filter((listing) => listing.course === course);
 }
 
 // B8. Return an array of the TITLES of the listings the buyer can afford.
 //     Required technique: filter, then map; call your canBuy inside filter.
 function affordableTitles(listings, budget) {
-  // TODO
+  return listings
+    .filter((listing) => canBuy(listing, budget))
+    .map((listing) => listing.title);
 }
 
 // B9. Return the UNSOLD listing with the lowest price; null if no listing is unsold.
 //     If prices tie, return the first one.
 //     Required technique: a loop with the "smallest so far" pattern.
 function cheapestAvailable(listings) {
-  // TODO
+  let cheapest = null;
+  for (const listing of listings) {
+    if (listing.sold === false &&
+        (cheapest === null || listing.price < cheapest.price)) {
+      cheapest = listing;
+    }
+  }
+  return cheapest;
 }
 
 // B10. Return an object { seller, count, total } describing that seller's UNSOLD
 //      listings, with total rounded to cents.
 //      Required technique: a loop with a counter and a running total.
 function sellerSummary(listings, seller) {
-  // TODO
+  let count = 0;
+  let total = 0;
+  for (const listing of listings) {
+    if (listing.seller === seller && listing.sold === false) {
+      count++;
+      total += listing.price;
+    }
+  }
+  return { seller, count, total: Math.round(total * 100) / 100 };
 }
