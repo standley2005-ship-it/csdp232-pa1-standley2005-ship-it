@@ -24,4 +24,4 @@ TODO: 3–5 sentences in my own words.
 
 ## AI use statement
 
-I used ChatGPT to help me understand JavaScript concepts like functions, arrays, loops, and debugging. I also used it to help write parts of the code, check my work, and troubleshoot errors.
+I used ChatGPT to better understand JavaScript concepts, work through the assignment's functions, troubleshoot errors, and verify test results.
