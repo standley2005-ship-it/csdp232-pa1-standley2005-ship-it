@@ -13,12 +13,12 @@
 // C1. Return "Welcome to Shore Book Swap, <name>!"
 function welcomeMessage(name) {
   const greeting = "Welcome to Shore Book Swap, ";
-  return greeting + Name + "!";
+  return greeting + name + "!";
 }
 
 // C2. Return true only when the condition is "fair", without changing the listing.
 function isOnSale(listing) {
-  if (listing.condition = "fair") {
+  if (listing.condition === "fair") {
     return true;
   }
   return false;
@@ -27,7 +27,7 @@ function isOnSale(listing) {
 // C3. Return the total of the prices in the cart; 0 for an empty cart.
 function cartSubtotal(cart) {
   let total = 0;
-  for (let i = 0; i <= cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     total = total + cart[i].price;
   }
   return total;
@@ -38,11 +38,12 @@ function cartSubtotal(cart) {
 function addTax(subtotal) {
   const withTax = subtotal * 1.06;
   const rounded = Math.round(withTax * 100) / 100;
+  return rounded;
 }
 
 // C5. The subtotal arrives from a form as text. Return the subtotal plus $5
 //     shipping as a NUMBER.   addShipping("30") -> 35
 function addShipping(subtotalText) {
   const shipping = 5;
-  return subtotalText + shipping;
+  return Number(subtotalText) + shipping;
 }
