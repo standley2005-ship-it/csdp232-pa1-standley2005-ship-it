@@ -2,7 +2,7 @@
 
 **Name:** Standley Saint Leger Rock  
 **GitHub username:** standley2005-ship-it  
-**GitHub Pages link for pa2/:** Pending GitHub Pages publication
+**GitHub Pages link for pa2/:** [Shore Book Swap self-check](https://standley2005-ship-it.github.io/csdp232-pa1-standley2005-ship-it/pa2/) (requires GitHub Pages to be enabled and verified before submission)
 
 ## Run the assignment
 
