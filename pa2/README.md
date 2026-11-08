@@ -4,6 +4,18 @@
 **GitHub username:** standley2005-ship-it  
 **GitHub Pages link for pa2/:** Pending GitHub Pages publication
 
+## Run the assignment
+
+Open `pa2/index.html` in a browser to run the original 37 instructor checks. The page loads the JavaScript files from `pa2/js/` and displays the results.
+
+For additional edge-case tests, run this command from the repository root:
+
+```bash
+node pa2/tests/edge-cases.js
+```
+
+The original `js/checks.js` and `js/data.js` files are kept unchanged.
+
 ## Self-check result
 
 Self-check: 37 of 37 checks passed
